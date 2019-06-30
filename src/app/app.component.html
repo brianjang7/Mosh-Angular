@@ -1,0 +1,76 @@
+
+<input type="text" appInputFormat [format]="'uppercase'">
+
+<!--
+
+    <span >{{ task.assignee?.name }}</span>
+
+    *ngIf="task.assignee"
+
+<button
+[ngStyle]="{
+    'backgroundColor': canSave ? 'blue': 'gray',
+    'color': canSave ? 'white': 'black',
+    'fontWeight': canSave ? 'bold': 'normal'
+}"
+>
+    Save
+</button>
+
+
+<button
+    [style.backgroundColor]="canSave ? 'blue': 'gray'"
+    [style.color]="canSave ? 'white': 'black'"
+    [style.fontWeight]="canSave ? 'bold': 'normal'"
+
+    <favorite></favorite>
+
+<span class="glyphicon glyphicon-user"></span>
+<favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></favorite>
+<span class="glyphicon glyphicon-user"></span>
+
+<bootstrap-panel>
+    <ng-container class="heading">Heading</ng-container>
+    <div class="body">
+        <h2>Body</h2>
+        <p>Some content here...</p>
+    </div>
+</bootstrap-panel>
+
+<div *ngIf="courses.length > 0; then coursesList else noCourses"> </div>
+<ng-template #coursesList>
+    List of courses
+</ng-template>
+<ng-template #noCourses>
+    No courses yet
+</ng-template>
+
+<div [hidden]="courses.length == 0">
+    List of courses
+</div>
+<div [hidden]="courses.length > 0">
+    No courses yet
+</div>
+
+<ul class="nav nav-pills">
+    <li [class.active]="viewMode == 'map'"><a (click)="viewMode = 'map'">Map View</a></li>
+    <li [class.active]="viewMode == 'list'"><a (click)="viewMode = 'list'">List View</a></li>
+</ul>
+<div [ngSwitch]="viewMode">
+    <div *ngSwitchCase="'map'">Map View Content</div>
+    <div *ngSwitchCase="'list'">List View Content</div>
+    <div *ngSwitchDefault>Otherwise</div>
+</div>
+
+<button (click)="onAdd()">Add</button>
+<button (click)="onChange(course)">Remove</button>
+
+<button (click)="loadCourses()">Load Courses</button>
+<ul>
+    <li *ngFor="let course of courses; trackBy: trackCourse">
+        {{ course.name}}
+    </li>
+</ul>
+
+-->
+
