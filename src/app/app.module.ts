@@ -19,10 +19,11 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     FavoriteComponent,
     PanelComponent,
     InputFormatDirective,
-    ContactFormComponent
+    ContactFormComponent    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
